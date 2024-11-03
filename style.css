@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    
+}
+.shipping{
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 0.01px solid wheat;
+}
+.shipping:hover{
+    background-color: rgb(33, 33, 33);
+}
+.shipping p{
+    font-size: 15px;
+    font-family: BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+.head{
+    /* position: fixed;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 80px; */
+    align-items: center;
+    padding: 25px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+.logo{
+    margin-left: 20px;
+}
+.logo img{
+    height: 25px;
+
+}
+.nav a{
+    color: rgb(188, 181, 181);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    
+}
+.container{
+    margin-top: 170px;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.icons a {
+    color: rgb(202, 200, 200);
+    text-decoration: none;
+    align-items: center;
+}
+.icons-1:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.line-1{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.line-1 img{
+    height: 100%;
+    width: 370px;
+}
+.line-2{
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.line-2 img{
+    height: 100%;
+    width: 370px;
+}
+.line-3{
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.line-3 img{
+    height: 100%;
+    width: 370px;
+}
+.profile{
+    display: flex;
+    margin-left: 65px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.pro-pic img{
+    height: 100%;
+    width: 400px;
+}
+.details{
+    margin: 60px;
+    font-family: BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    
+}
+.details h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.details h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+.details button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.foot{
+    margin-top: 70px;
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.contact{
+    margin-top: 30px;
+    color: azure;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 1; */
+}
+.num{
+    color: rgb(188, 181, 181);
+}
+.num:hover{
+    color: rgb(255, 255, 255);
+}
+.contact p{
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.contact h3{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.number{
+    margin-bottom: 32px;
+}
+.insta{
+    color: white;
+    height: 20px;
+}
+.insta:hover{
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+.copyright{
+    border-top: 1px solid wheat;
+    padding: 50px;
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    font-size: 13px;
+}
+.copyright p,svg{
+    color: rgb(188, 181, 181);
+}
+.copyright a{
+    color: rgb(188, 181, 181);
+    text-decoration: none;
+}
+.c2024{
+    margin-right: 5px;
+}
+.underline:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* General adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .line-1 img, .line-2 img, .line-3 img {
+        width: 300px; /* Slightly smaller images for tablets */
+    }
+    .details button {
+        padding: 10px 30px;
+    }
+}
+
+/* Mobile and smaller tablet view */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .line-1, .line-2, .line-3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .line-1 img, .line-2 img, .line-3 img {
+        width: 80%; /* Adjust image size for mobile */
+        max-width: 300px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .pro-pic img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .details {
+        margin: 20px;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .shipping p {
+        font-size: 12px;
+    }
+
+    .details h2 {
+        font-size: 20px;
+    }
+
+    .details h3 {
+        font-size: 18px;
+    }
+
+    .details button {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .num {
+        font-size: 1rem;
+    }
+
+    .shipping {
+        padding: 8px;
+    }
+}
